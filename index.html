@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Activity6</title>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        // alert("Welcome, Enjoy!");
+        $("#head1").css({ color: "gray", "background-color": "black" });
+        $(".navbar-nav").on("click", function () {
+          $(".navbar-nav .active").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <!-- Brand -->
+      <div class="container">
+        <a class="navbar-brand" href="#">ProLogo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarid"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarid">
+          <ul class="navbar-nav text-center ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbardrop"
+                data-toggle="dropdown"
+              >
+                Products
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Dress</a>
+                <a class="dropdown-item" href="#">Pants</a>
+                <a class="dropdown-item" href="#">Denim Jacket</a>
+                <a class="dropdown-item" href="#">T-Shirts</a>
+                <a class="dropdown-item" href="#">Shoes</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbardrop"
+                data-toggle="dropdown"
+              >
+                Services
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Saving Accounts</a>
+                <a class="dropdown-item" href="#">Insurance Facilities</a>
+                <a class="dropdown-item" href="#">Investment Services</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+      <div
+        class="
+          container
+          d-flex
+          align-items-center
+          justify-content-end
+          flex-column
+        "
+      >
+        <h1 class="display-4 justify-content-center d-flex">
+          Explore your<br />
+          True Style
+        </h1>
+
+        <p class="lead">
+          <a
+            class="btn btn-warning btn-lg ml-3"
+            href="https://www.zalora.com.ph/  "
+            role="button"
+            >Learn more</a
+          >
+        </p>
+      </div>
+    </div>
+    <div class="container mt-3">
+      <h1 id="head1">Products Table</h1>
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">ProductNo</th>
+              <th scope="col">Thumbnail</th>
+              <th scope="col">Name</th>
+              <th scope="col">Categories</th>
+              <th scope="col">Date</th>
+              <th scope="col">Prize</th>
+              <th scope="col">Buy</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td><img src="./img/modestydress/1.jpg" /></td>
+              <td>Dress</td>
+              <td>Women</td>
+              <td>10.08.21</td>
+              <td>$55</td>
+              <td>
+                <button type="button" class="btn btn-outline-secondary">
+                  1
+                </button>
+                <button type="button" class="btn btn-dark btn-sm">
+                  Add to cart
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td><img src="./img/pants/1.jpg" alt="" /></td>
+              <td>Pants</td>
+              <td>Men</td>
+              <td>04.25.21</td>
+              <td>$70</td>
+              <td>
+                <button type="button" class="btn btn-outline-secondary">
+                  1
+                </button>
+                <button type="button" class="btn btn-dark btn-sm">
+                  Add to cart
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td><img src="./img/tshirts/1.jpg" alt="" /></td>
+              <td>Tshirt</td>
+              <td>Unisex</td>
+              <td>10.09.21</td>
+              <td>$45</td>
+              <td>
+                <button type="button" class="btn btn-outline-secondary">
+                  1
+                </button>
+                <button type="button" class="btn btn-dark btn-sm">
+                  Add to cart
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td><img src="./img/modestydress/2.jpg" alt="" /></td>
+              <td>Dress</td>
+              <td>Women</td>
+              <td>07.14.21</td>
+              <td>$80</td>
+              <td>
+                <button type="button" class="btn btn-outline-secondary">
+                  1
+                </button>
+                <button type="button" class="btn btn-dark btn-sm">
+                  Add to cart
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td><img src="./img/pants/2.webp" alt="" /></td>
+              <td>Pants</td>
+              <td>Men</td>
+              <td>04.04.21</td>
+              <td>$55</td>
+              <td>
+                <button type="button" class="btn btn-outline-secondary">
+                  1
+                </button>
+                <button type="button" class="btn btn-dark btn-sm">
+                  Add to cart
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td><img src="./img/tshirts/2.jpg" alt="" /></td>
+              <td>Tshirt</td>
+              <td>Unisex</td>
+              <td>08.03.21</td>
+              <td>$90</td>
+              <td>
+                <button type="button" class="btn btn-outline-secondary">
+                  1
+                </button>
+                <button type="button" class="btn btn-dark btn-sm">
+                  Add to cart
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td><img src="./img/modestydress/3.jpg" alt="" /></td>
+              <td>Dress</td>
+              <td>Women</td>
+              <td>06.5.21</td>
+              <td>$145</td>
+              <td>
+                <button type="button" class="btn btn-outline-secondary">
+                  1
+                </button>
+                <button type="button" class="btn btn-dark btn-sm">
+                  Add to cart
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td><img src="./img/pants/3.jpg" alt="" /></td>
+              <td>Pants</td>
+              <td>Men</td>
+              <td>09.11.21</td>
+              <td>$15</td>
+              <td>
+                <button type="button" class="btn btn-outline-secondary">
+                  1
+                </button>
+                <button type="button" class="btn btn-dark btn-sm">
+                  Add to cart
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td><img src="./img/tshirts/3.jpg" alt="" /></td>
+              <td>Tshirt</td>
+              <td>Unisex</td>
+              <td>01.09.21</td>
+              <td>$100</td>
+              <td>
+                <button type="button" class="btn btn-outline-secondary">
+                  1
+                </button>
+                <button type="button" class="btn btn-dark btn-sm">
+                  Add to cart
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td><img src="./img/modestydress/5.jpg" alt="" /></td>
+              <td>Dress</td>
+              <td>Women</td>
+              <td>08.1.21</td>
+              <td>$80</td>
+              <td>
+                <button type="button" class="btn btn-outline-secondary">
+                  1
+                </button>
+                <button type="button" class="btn btn-dark btn-sm">
+                  Add to cart
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div
+      class="btn-toolbar justify-content-center"
+      role="toolbar"
+      aria-label="Toolbar with button groups"
+    >
+      <div class="btn-group" role="group" aria-label="First group">
+        <button type="button" class="btn btn-warning">Previous</button>
+        <button type="button" class="btn btn-warning">1</button>
+        <button type="button" class="btn btn-warning">2</button>
+        <button type="button" class="btn btn-warning">3</button>
+        <button type="button" class="btn btn-warning">4</button>
+        <button type="button" class="btn btn-warning">Next</button>
+      </div>
+    </div>
+    <div class="container py-5">
+      <div class="row text-center text-dark">
+        <div class="col-lg-7 mx-auto">
+          <h1 class="display-4 text-dark">Phones</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <!-- List group-->
+          <ul class="list-group shadow">
+            <!-- list group item-->
+            <li class="list-group-item">
+              <!-- Custom content-->
+              <div
+                class="media align-items-lg-center flex-column flex-lg-row p-3"
+              >
+                <div class="media-body order-2 order-lg-1">
+                  <h5 class="mt-0 font-weight-bold mb-2">
+                    Apple iPhone XR (Red, 128 GB)
+                  </h5>
+                  <p class="font-italic text-muted mb-0 small">
+                    128 GB ROM | 15.49 cm (6.1 inch) Display 12MP Rear Camera |
+                    7MP Front Camera A12 Bionic Chip Processor
+                  </p>
+                  <div
+                    class="
+                      d-flex
+                      align-items-center
+                      justify-content-between
+                      mt-1
+                    "
+                  >
+                    <h6 class="font-weight-bold my-2">$64,999</h6>
+                    <ul class="list-inline small">
+                      <li class="list-inline-item m-0">
+                        <i class="fa fa-star text-success"></i>
+                      </li>
+                      <li class="list-inline-item m-0">
+                        <i class="fa fa-star text-success"></i>
+                      </li>
+                      <li class="list-inline-item m-0">
+                        <i class="fa fa-star text-success"></i>
+                      </li>
+                      <li class="list-inline-item m-0">
+                        <i class="fa fa-star text-success"></i>
+                      </li>
+                      <li class="list-inline-item m-0">
+                        <i class="fa fa-star-o text-gray"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <img
+                  src="./img/avatar1.jpeg"
+                  alt="Generic placeholder image"
+                  width="200"
+                  class="ml-lg-5 order-1 order-lg-2"
+                />
+              </div>
+              <!-- End -->
+            </li>
+            <!-- End -->
+            <!-- list group item-->
+            <li class="list-group-item">
+              <!-- Custom content-->
+              <div
+                class="media align-items-lg-center flex-column flex-lg-row p-3"
+              >
+                <div class="media-body order-2 order-lg-1">
+                  <h5 class="mt-0 font-weight-bold mb-2">
+                    Apple iPhone XS (Silver, 64 GB)
+                  </h5>
+                  <p class="font-italic text-muted mb-0 small">
+                    64 GB ROM | 14.73 cm (5.8 inch) Super Retina HD Display 12MP
+                    + 12MP | 7MP Front Camera A12 Bionic Chip Processor
+                  </p>
+                  <div
+                    class="
+                      d-flex
+                      align-items-center
+                      justify-content-between
+                      mt-1
+                    "
+                  >
+                    <h6 class="font-weight-bold my-2">$99,900</h6>
+                    <ul class="list-inline small">
+                      <li class="list-inline-item m-0">
+                        <i class="fa fa-star text-success"></i>
+                      </li>
+                      <li class="list-inline-item m-0">
+                        <i class="fa fa-star text-success"></i>
+                      </li>
+                      <li class="list-inline-item m-0">
+                        <i class="fa fa-star text-success"></i>
+                      </li>
+                      <li class="list-inline-item m-0">
+                        <i class="fa fa-star text-success"></i>
+                      </li>
+                      <li class="list-inline-item m-0">
+                        <i class="fa fa-star text-success"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <img
+                  src="./img/avatar2.jfif"
+                  alt="Generic placeholder image"
+                  width="200"
+                  class="ml-lg-5 order-1 order-lg-2"
+                />
+              </div>
+              <!-- End -->
+            </li>
+            <!-- End -->
+            <!-- list group item -->
+            <li class="list-group-item">
+              <!-- Custom content-->
+              <div
+                class="media align-items-lg-center flex-column flex-lg-row p-3"
+              >
+                <div class="media-body order-2 order-lg-1">
+                  <h5 class="mt-0 font-weight-bold mb-2">
+                    Apple iPhone XS Max (Gold, 64 GB)
+                  </h5>
+                  <p class="font-italic text-muted mb-0 small">
+                    64 GB ROM | 16.51 cm (6.5 inch) Super Retina HD Display 12MP
+                    + 12MP | 7MP Front Camera A12 Bionic Chip Processor
+                  </p>
+                  <div
+                    class="
+                      d-flex
+                      align-items-center
+                      justify-content-between
+                      mt-1
+                    "
+                  >
+                    <h6 class="font-weight-bold my-2">$1,09,900</h6>
+                    <ul class="list-inline small">
+                      <li class="list-inline-item m-0">
+                        <i class="fa fa-star text-success"></i>
+                      </li>
+                      <li class="list-inline-item m-0">
+                        <i class="fa fa-star text-success"></i>
+                      </li>
+                      <li class="list-inline-item m-0">
+                        <i class="fa fa-star text-success"></i>
+                      </li>
+                      <li class="list-inline-item m-0">
+                        <i class="fa fa-star text-success"></i>
+                      </li>
+                      <li class="list-inline-item m-0">
+                        <i class="fa fa-star-o text-gray"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <img
+                  src="./img/avatar3.jfif"
+                  alt="Generic placeholder image"
+                  width="200"
+                  class="ml-lg-5 order-1 order-lg-2"
+                />
+              </div>
+              <!-- End -->
+            </li>
+            <!-- End -->
+            <!-- list group item -->
+            <li class="list-group-item">
+              <!-- Custom content-->
+              <div
+                class="media align-items-lg-center flex-column flex-lg-row p-3"
+              >
+                <div class="media-body order-2 order-lg-1">
+                  <h5 class="mt-0 font-weight-bold mb-2">
+                    OnePlus 7 Pro (Almond, 256 GB)
+                  </h5>
+                  <p class="font-italic text-muted mb-0 small">
+                    Rear Camera|48MP (Primary)+ 8MP (Tele-photo)+16MP
+                    (ultrawide)| Front Camera|16 MP POP-UP Camera|8GB
+                    RAM|Android pie
+                  </p>
+                  <div
+                    class="
+                      d-flex
+                      align-items-center
+                      justify-content-between
+                      mt-1
+                    "
+                  >
+                    <h6 class="font-weight-bold my-2">$52,999</h6>
+                    <ul class="list-inline small">
+                      <li class="list-inline-item m-0">
+                        <i class="fa fa-star text-success"></i>
+                      </li>
+                      <li class="list-inline-item m-0">
+                        <i class="fa fa-star text-success"></i>
+                      </li>
+                      <li class="list-inline-item m-0">
+                        <i class="fa fa-star text-success"></i>
+                      </li>
+                      <li class="list-inline-item m-0">
+                        <i class="fa fa-star text-success"></i>
+                      </li>
+                      <li class="list-inline-item m-0">
+                        <i class="fa fa-star text-success"></i>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <img
+                  src="./img/avatar.jpeg"
+                  alt="Generic placeholder image"
+                  width="200"
+                  class="ml-lg-5 order-1 order-lg-2"
+                />
+              </div>
+              <!-- End -->
+            </li>
+            <!-- End -->
+          </ul>
+          <!-- End -->
+        </div>
+      </div>
+    </div>
+    <div class="alert alert-warning" role="alert">
+      <h4 class="alert-heading">Well done!</h4>
+      <p>
+        Aww yeah, you successfully read this important alert message. This
+        example text is going to run a bit longer so that you can see how
+        spacing within an alert works with this kind of content.
+      </p>
+      <hr />
+      <p class="mb-0">
+        Whenever you need to, be sure to use margin utilities to keep things
+        nice and tidy.
+      </p>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--<script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>-->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
