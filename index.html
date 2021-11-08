@@ -22,25 +22,15 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/style.css" />
 
     <title>Activity6</title>
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-
-    <script>
-      $(document).ready(function () {
-        // alert("Welcome, Enjoy!");
-        $("#head1").css({ color: "gray", "background-color": "black" });
-        $(".navbar-nav").on("click", function () {
-          $(".navbar-nav .active").removeClass("active");
-          $(this).addClass("active");
-        });
-      });
-    </script>
   </head>
   <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
@@ -105,6 +95,7 @@
           </ul>
         </div>
       </div>
+      <i class="fas fa-shopping-cart"></i>
     </nav>
 
     <div class="jumbotron jumbotron-fluid">
@@ -117,17 +108,14 @@
           flex-column
         "
       >
-        <h1 class="display-4 justify-content-center d-flex">
+        <h1 class="display-4 justify-content-center d-flex" id="head2">
           Explore your<br />
           True Style
         </h1>
 
-        <p class="lead">
-          <a
-            class="btn btn-warning btn-lg ml-3"
-            href="https://www.zalora.com.ph/  "
-            role="button"
-            >Learn more</a
+        <p id="lead">
+          <a class="btn btn-warning btn-lg ml-3" href="#" id="button-hide"
+            >Click Me</a
           >
         </p>
       </div>
@@ -566,11 +554,11 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!--<script
+    <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
-    ></script>-->
+    ></script>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
@@ -582,5 +570,6 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+    <script src="./JS/main.js"></script>
   </body>
 </html>

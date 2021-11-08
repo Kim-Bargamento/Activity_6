@@ -70,3 +70,9 @@ body {
 .navbar .nav-item .nav-link:hover::before {
   transform: scale(1);
 }
+
+.fa-shopping-cart {
+  color: #fff;
+  cursor: pointer;
+  margin-right: 10px;
+}
