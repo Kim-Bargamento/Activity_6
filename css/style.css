@@ -135,7 +135,7 @@ p {
 .itemprice {
   text-align: center;
   width: 30px;
-
+  margin-left: 10px;
   display: flex;
   height: 70px;
   justify-content: center;
@@ -159,4 +159,22 @@ p {
 #btnpurc:hover {
   background: rgb(150, 150, 146);
   color: rgb(247, 241, 241);
+}
+
+#add {
+  background: chocolate;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  height: 30px;
+  padding: 0;
+}
+#add > p {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#minus {
+  background: cornflowerblue;
+  border-radius: 3px;
 }
