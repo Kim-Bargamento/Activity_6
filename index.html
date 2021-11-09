@@ -140,148 +140,37 @@
               <th scope="col">Buy</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td><img src="./img/modestydress/1.jpg" /></td>
-              <td>Dress</td>
-              <td>Women</td>
-              <td>10.08.21</td>
-              <td>$55</td>
-              <td>
-                <button type="button" id="button" class="btn btn-dark btn-sm">
-                  Add to cart
-                </button>
-                <button
-                  type="button"
-                  id="button"
-                  class="btn btn-warning btn-sm"
-                >
-                  Remove
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td><img src="./img/pants/1.jpg" alt="" /></td>
-              <td>Pants</td>
-              <td>Men</td>
-              <td>04.25.21</td>
-              <td>$70</td>
-              <td>
-                <button type="button" class="btn btn-dark btn-sm">
-                  Add to cart
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td><img src="./img/tshirts/1.jpg" alt="" /></td>
-              <td>Tshirt</td>
-              <td>Unisex</td>
-              <td>10.09.21</td>
-              <td>$45</td>
-              <td>
-                <button type="button" class="btn btn-dark btn-sm">
-                  Add to cart
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td><img src="./img/modestydress/2.jpg" alt="" /></td>
-              <td>Dress</td>
-              <td>Women</td>
-              <td>07.14.21</td>
-              <td>$80</td>
-              <td>
-                <button type="button" class="btn btn-dark btn-sm">
-                  Add to cart
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">5</th>
-              <td><img src="./img/pants/2.webp" alt="" /></td>
-              <td>Pants</td>
-              <td>Men</td>
-              <td>04.04.21</td>
-              <td>$55</td>
-              <td>
-                <button type="button" class="btn btn-dark btn-sm">
-                  Add to cart
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">6</th>
-              <td><img src="./img/tshirts/2.jpg" alt="" /></td>
-              <td>Tshirt</td>
-              <td>Unisex</td>
-              <td>08.03.21</td>
-              <td>$90</td>
-              <td>
-                <button type="button" class="btn btn-dark btn-sm">
-                  Add to cart
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">7</th>
-              <td><img src="./img/modestydress/3.jpg" alt="" /></td>
-              <td>Dress</td>
-              <td>Women</td>
-              <td>06.5.21</td>
-              <td>$145</td>
-              <td>
-                <button type="button" class="btn btn-dark btn-sm">
-                  Add to cart
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">8</th>
-              <td><img src="./img/pants/3.jpg" alt="" /></td>
-              <td>Pants</td>
-              <td>Men</td>
-              <td>09.11.21</td>
-              <td>$15</td>
-              <td>
-                <button type="button" class="btn btn-dark btn-sm">
-                  Add to cart
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">9</th>
-              <td><img src="./img/tshirts/3.jpg" alt="" /></td>
-              <td>Tshirt</td>
-              <td>Unisex</td>
-              <td>01.09.21</td>
-              <td>$100</td>
-              <td>
-                <button type="button" class="btn btn-dark btn-sm">
-                  Add to cart
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">10</th>
-              <td><img src="./img/modestydress/5.jpg" alt="" /></td>
-              <td>Dress</td>
-              <td>Women</td>
-              <td>08.1.21</td>
-              <td>$80</td>
-              <td>
-                <button type="button" class="btn btn-dark btn-sm">
-                  Add to cart
-                </button>
-              </td>
-            </tr>
-          </tbody>
+          <tbody id="table_products"></tbody>
         </table>
       </div>
     </div>
+    <div
+      class="
+        row
+        pr-md-5
+        d-flex
+        justify-content-center justify-content-md-end
+        bg-info
+      "
+    >
+      <div
+        class="
+          col-md-6 col-lg-4
+          mr-lg-5
+          border
+          p-3
+          pb-4
+          rounded-lg
+          bg-white
+          ml-md-0
+        "
+        id="cart"
+        style="position: absolute; z-index: 1; top: 80px; overflow: auto"
+      >
+        <div class="d-flex"></div>
+      </div>
+    </div>
+
     <div
       class="btn-toolbar justify-content-center"
       role="toolbar"
@@ -552,6 +441,9 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <script src="./JS/main.js"></script>
+    <script type="module" src="./JS/main.js"></script>
+    <script type="module" src="./JS/main2.js"></script>
+    <script type="module" src="./JS/data.js"></script>
+    <script type="module" src="./JS/cart.js"></script>
   </body>
 </html>
