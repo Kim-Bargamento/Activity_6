@@ -81,3 +81,82 @@ body {
   margin-left: -20px;
   margin-bottom: -5px;
 }
+
+.itemContainer {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  flex-direction: row;
+}
+.item_image {
+  width: 70px;
+  height: 70px;
+  background-image: url("../img/tshirts/1.jpg");
+  background-size: contain;
+}
+.item_description {
+  height: 70px;
+  margin-left: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.item_description > p,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.item-qty {
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+}
+
+.item-qty > div,
+p {
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+  justify-content: center;
+}
+
+.item-qty > p {
+  text-align: center;
+  width: 30px;
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.itemprice {
+  text-align: center;
+  width: 30px;
+
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.purchasebutton {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+#btnpurc {
+  width: 50%;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+}
+#btnpurc:hover {
+  background: rgb(150, 150, 146);
+  color: rgb(247, 241, 241);
+}

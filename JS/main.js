@@ -21,9 +21,9 @@ $(document).ready(function () {
         $('#cart_item_count').text(items);
         });
         
-        $('#main-sub').hover(function(){
-            $(this).css('background-color', 'yellow');
-        }, function(){
-            $(this).css('background-color', 'pink');
-        });
+        // $('#main-sub').hover(function(){
+        //     $(this).css('background-color', 'yellow');
+        // }, function(){
+        //     $(this).css('background-color', 'pink');
+        // });
 });

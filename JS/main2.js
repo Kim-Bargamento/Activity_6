@@ -22,4 +22,11 @@ $(document).ready(()=> {
             `
         )
     })
+    $('#shopping-cart').click(() => {
+        $('#cart').toggle(() =>{
+
+        }, () => {
+            
+        })
+    })
 })
