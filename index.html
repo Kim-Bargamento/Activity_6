@@ -95,7 +95,11 @@
           </ul>
         </div>
       </div>
-      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-shopping-cart" id="shopping-cart"></i>
+      <span
+        class="badge badge-light mt-0 align-self-start"
+        id="cart_item_count"
+      ></span>
     </nav>
 
     <div class="jumbotron jumbotron-fluid">
@@ -120,6 +124,7 @@
         </p>
       </div>
     </div>
+    <!--  -->
     <div class="container mt-3">
       <h1 id="head1">Products Table</h1>
       <div class="table-responsive">
@@ -144,11 +149,15 @@
               <td>10.08.21</td>
               <td>$55</td>
               <td>
-                <button type="button" class="btn btn-outline-secondary">
-                  1
-                </button>
-                <button type="button" class="btn btn-dark btn-sm">
+                <button type="button" id="button" class="btn btn-dark btn-sm">
                   Add to cart
+                </button>
+                <button
+                  type="button"
+                  id="button"
+                  class="btn btn-warning btn-sm"
+                >
+                  Remove
                 </button>
               </td>
             </tr>
@@ -160,9 +169,6 @@
               <td>04.25.21</td>
               <td>$70</td>
               <td>
-                <button type="button" class="btn btn-outline-secondary">
-                  1
-                </button>
                 <button type="button" class="btn btn-dark btn-sm">
                   Add to cart
                 </button>
@@ -176,9 +182,6 @@
               <td>10.09.21</td>
               <td>$45</td>
               <td>
-                <button type="button" class="btn btn-outline-secondary">
-                  1
-                </button>
                 <button type="button" class="btn btn-dark btn-sm">
                   Add to cart
                 </button>
@@ -192,9 +195,6 @@
               <td>07.14.21</td>
               <td>$80</td>
               <td>
-                <button type="button" class="btn btn-outline-secondary">
-                  1
-                </button>
                 <button type="button" class="btn btn-dark btn-sm">
                   Add to cart
                 </button>
@@ -208,9 +208,6 @@
               <td>04.04.21</td>
               <td>$55</td>
               <td>
-                <button type="button" class="btn btn-outline-secondary">
-                  1
-                </button>
                 <button type="button" class="btn btn-dark btn-sm">
                   Add to cart
                 </button>
@@ -224,9 +221,6 @@
               <td>08.03.21</td>
               <td>$90</td>
               <td>
-                <button type="button" class="btn btn-outline-secondary">
-                  1
-                </button>
                 <button type="button" class="btn btn-dark btn-sm">
                   Add to cart
                 </button>
@@ -240,9 +234,6 @@
               <td>06.5.21</td>
               <td>$145</td>
               <td>
-                <button type="button" class="btn btn-outline-secondary">
-                  1
-                </button>
                 <button type="button" class="btn btn-dark btn-sm">
                   Add to cart
                 </button>
@@ -256,9 +247,6 @@
               <td>09.11.21</td>
               <td>$15</td>
               <td>
-                <button type="button" class="btn btn-outline-secondary">
-                  1
-                </button>
                 <button type="button" class="btn btn-dark btn-sm">
                   Add to cart
                 </button>
@@ -272,9 +260,6 @@
               <td>01.09.21</td>
               <td>$100</td>
               <td>
-                <button type="button" class="btn btn-outline-secondary">
-                  1
-                </button>
                 <button type="button" class="btn btn-dark btn-sm">
                   Add to cart
                 </button>
@@ -288,9 +273,6 @@
               <td>08.1.21</td>
               <td>$80</td>
               <td>
-                <button type="button" class="btn btn-outline-secondary">
-                  1
-                </button>
                 <button type="button" class="btn btn-dark btn-sm">
                   Add to cart
                 </button>
@@ -325,7 +307,7 @@
           <!-- List group-->
           <ul class="list-group shadow">
             <!-- list group item-->
-            <li class="list-group-item">
+            <li class="list-group-item" id="main-sub">
               <!-- Custom content-->
               <div
                 class="media align-items-lg-center flex-column flex-lg-row p-3"

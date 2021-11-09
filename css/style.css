@@ -75,4 +75,9 @@ body {
   color: #fff;
   cursor: pointer;
   margin-right: 10px;
+  margin-bottom: -20px;
+}
+#cart_item_count {
+  margin-left: -20px;
+  margin-bottom: -5px;
 }

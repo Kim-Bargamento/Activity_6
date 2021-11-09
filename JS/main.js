@@ -12,4 +12,18 @@ $(document).ready(function () {
       $(".navbar-nav .active").removeClass("active");
       $(".navbar-nav").addClass("active");
     });
+        let items = 0
+        $('button').click(function(){
+            items++;
+            // alert();
+        
+           
+        $('#cart_item_count').text(items);
+        });
+        
+        $('#main-sub').hover(function(){
+            $(this).css('background-color', 'yellow');
+        }, function(){
+            $(this).css('background-color', 'pink');
+        });
 });
